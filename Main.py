@@ -1,5 +1,5 @@
 import player
-import Board
+import board
 import commissions
 import gambits
 import market
@@ -24,7 +24,7 @@ class New_Game():
 
     # this deals out sites randomly to all spots on the board and chooses this game's region bonuses
     def set_up_board(self):
-        self.game_board = Board.Board_Template()
+        self.game_board = board.Board_Template()
         self.game_board.generate_board()
         self.game_board.assign_region_bonuses()
 

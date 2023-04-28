@@ -1,5 +1,5 @@
 import workforce
-import Board
+import board
 class Player():
 
     def __init__(self, color):
