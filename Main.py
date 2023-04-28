@@ -1,8 +1,8 @@
-import Player
+import player
 import Board
-import Commissions
-import Gambits
-import Market
+import commissions
+import gambits
+import market
 
 class New_Game():
 
@@ -14,8 +14,8 @@ class New_Game():
         pass
 
     def choose_color(self): # this needs to interact with players to know how many are playing. Writing manual for now.
-        blue_player = Player("blue")
-        white_player = Player("white")
+        blue_player = player("blue")
+        white_player = player("white")
         self.active_player_list.append(blue_player)
         self.active_player_list.append(white_player)
 
@@ -30,7 +30,7 @@ class New_Game():
 
     # deals starting gambits and tools to market
     def set_up_market(self):
-        self.game_market = Market.Market()
+        self.game_market = market.Market()
         self.game_market.market_set_up(self.num_players)
 
     # this is only partially built at the moment, loops through player colors and gets player pieces in correct home village at game start

@@ -1,6 +1,6 @@
-import Player
+import player
 import Board
-import Commissions
-import Gambits
-import Market
+import commissions
+import gambits
+import market
 

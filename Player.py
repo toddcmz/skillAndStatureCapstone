@@ -1,4 +1,4 @@
-import Workforce
+import workforce
 import Board
 class Player():
 
@@ -25,13 +25,13 @@ class Player():
         }
         self.gambits = []
 
-        self.worker1 = Workforce(self.color, "worker")
-        self.worker2 = Workforce(self.color, "worker")
-        self.worker3 = Workforce(self.color, "worker")
-        self.worker4 = Workforce(self.color, "worker")
-        self.worker5 = Workforce(self.color, "worker")
-        self.artisan1 = Workforce(self.color, "artisan")
-        self.artisan2 = Workforce(self.color, "artisan")
+        self.worker1 = workforce(self.color, "worker")
+        self.worker2 = workforce(self.color, "worker")
+        self.worker3 = workforce(self.color, "worker")
+        self.worker4 = workforce(self.color, "worker")
+        self.worker5 = workforce(self.color, "worker")
+        self.artisan1 = workforce(self.color, "artisan")
+        self.artisan2 = workforce(self.color, "artisan")
 
         self.worker_list = [self.worker1, self.worker2, self.worker3, self.worker4, self.worker5]
         self.artisan_list = [self.artisan1, self.artisan2]
